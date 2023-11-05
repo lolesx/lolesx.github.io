@@ -169,7 +169,7 @@
         <div class="orange-buttons">
             <a href="https://www.tiktok.com/@lo.les_" class="orange-button">Tiktok</a>
             <a href="https://github.com/lolesx/" class="orange-button">Github</a>
-            <a href="https://www.youtube.com/channel/UCB03wh1GjEZR4_D21XyzShA" class="orange-button">YouTube</a>
+            <a class="orange-button" onclick="copyToClipboard('.loles')">Discord</a>
         </div>
         <div class="blue-buttons">
             <a href="https://lolesx.github.io/xgen.classic/" class="blue-button">XGEN</a>
@@ -182,5 +182,17 @@
             Nocturnal Team 2023
         </div>
     </div>
+    
+    <script>
+        function copyToClipboard(text) {
+            var textArea = document.createElement("textarea");
+            textArea.value = text;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand("copy");
+            document.body.removeChild(textArea);
+            alert("Nom d'utilisateur copié dans le presse papiers." + text);
+        }
+    </script>
 </body>
 </html>
