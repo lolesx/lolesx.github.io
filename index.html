@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loles - Site Officiel</title>
-    <link rel="icon" href="https://cdn.discordapp.com/attachments/1152247588557443092/1163207613350158356/lo.les_.jpg?ex=65513182&is=653ebc82&hm=67df39859b473d5958a1df01b47e155d895d7962a50ff90a8752f65f69a8eb5b&">
+    <link rel="icon" href="https://cdn.discordapp.com/attachments/1152247588557443092/1163207613350158356/lo.les_.jpg?ex=65513182&is=653ebc82&hm=67df39859b473d5958a1df01b47e155d895d7962a50ff90a8752f65f69a8eb5b">
     <style>
         body {
             margin: 0;
@@ -20,6 +20,14 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
         }
 
         #title {
@@ -159,11 +167,12 @@
 </head>
 <body>
     <div id="container">
+        <img class="profile-image" src="https://cdn.discordapp.com/attachments/1152247588557443092/1163207613350158356/lo.les_.jpg?ex=65513182&is=653ebc82&hm=67df39859b473d5958a1df01b47e155d895d7962a50ff90a8752f65f69a8eb5b" alt="Loles's Image">
         <div id="title">
             Loles
         </div>
         <div id="biography">
-            Bonjour, je suis Loles.
+            Bonjour, je m'appelle Loles.
             Je suis un développeur et je développe des logiciels de hacking et utilitaires en python.
         </div>
         <div class="orange-buttons">
@@ -178,7 +187,7 @@
             <a href="https://lolesx.github.io/XTRE/" class="blue-button">XTRE</a>
         </div>
         <div id="credits">
-            Loles<br>
+            CustomBio By Loles<br>
             Nocturnal Team 2023
         </div>
     </div>
@@ -191,7 +200,7 @@
             textArea.select();
             document.execCommand("copy");
             document.body.removeChild(textArea);
-            alert("Nom d'utilisateur copié dans le presse papiers.");
+            alert("Nom d'utilisateur copié dans le presse-papiers.");
         }
     </script>
 </body>
